@@ -35,8 +35,8 @@ const element = {
 
 function Index() {
   return (
-    <div>
-      <section className="navbar_section" id={"home"}>
+    <div id={"home"}>
+      <section className="navbar_section">
         <Container>
           <Navbar />
         </Container>
