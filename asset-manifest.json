@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/abdulwajeedali007/portfolio/static/css/main.b2723990.css",
-    "main.js": "/abdulwajeedali007/portfolio/static/js/main.f49bf1e6.js",
+    "main.js": "/abdulwajeedali007/portfolio/static/js/main.1df7b8dc.js",
     "static/media/fitnessPro.jpg": "/abdulwajeedali007/portfolio/static/media/fitnessPro.98f6f6ccd24f16440782.jpg",
     "static/media/movieApp.jpg": "/abdulwajeedali007/portfolio/static/media/movieApp.85d50167144a286b8b6b.jpg",
     "static/media/foodExplore.jpg": "/abdulwajeedali007/portfolio/static/media/foodExplore.f0b5c0d7295348774a37.jpg",
@@ -9,10 +9,10 @@
     "static/media/Wajeed_Ali_resume.pdf": "/abdulwajeedali007/portfolio/static/media/Wajeed_Ali_resume.74783dea380b0391f84b.pdf",
     "index.html": "/abdulwajeedali007/portfolio/index.html",
     "main.b2723990.css.map": "/abdulwajeedali007/portfolio/static/css/main.b2723990.css.map",
-    "main.f49bf1e6.js.map": "/abdulwajeedali007/portfolio/static/js/main.f49bf1e6.js.map"
+    "main.1df7b8dc.js.map": "/abdulwajeedali007/portfolio/static/js/main.1df7b8dc.js.map"
   },
   "entrypoints": [
     "static/css/main.b2723990.css",
-    "static/js/main.f49bf1e6.js"
+    "static/js/main.1df7b8dc.js"
   ]
 }
