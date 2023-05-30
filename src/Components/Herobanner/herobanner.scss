@@ -1,0 +1,75 @@
+.hero_content {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  @media (max-width: 900px) {
+    height: 400px;
+    margin: 180px 0;
+  }
+  .hero_content_details {
+    width: 100%;
+    h2 {
+      font-size: 60px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      @media (max-width: 900px) {
+        font-size: 40px;
+      }
+      @media (max-width: 600px) {
+        font-size: 50px;
+      }
+    }
+  }
+  .btn_indicator {
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    // transform: translateY(-50%);
+    border: 2px solid #fff;
+    border-radius: 25px;
+    transition: all 2s linear;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 25px;
+      animation: dot 5s infinite;
+      @keyframes dot {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(25px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    }
+    @media (max-width: 900px) {
+      bottom: 0;
+    }
+  }
+}
+
+.pattern {
+  position: absolute;
+
+  right: -40%;
+  width: 500px;
+  height: 500px;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+}

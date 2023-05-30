@@ -1,0 +1,47 @@
+.project {
+  padding: 200px 0;
+  @media (max-width: 900px) {
+    padding: 100px 0;
+  }
+  &_logo__container {
+    &_box {
+      display: inline-block;
+      margin: 0px 4px;
+      background: #fff;
+      border-radius: 5px;
+      padding: 16px;
+    }
+  }
+  .titles {
+    h3 {
+      font-weight: 700;
+    }
+  }
+}
+.vertical-timeline-element-content {
+  box-shadow: 0 3px 0 #89939e !important;
+}
+.vertical-timeline--two-columns .vertical-timeline-element-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image_container {
+  width: 55px;
+  height: 55px;
+  line-height: 35px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 40px;
+}
+.project_points li {
+  font-size: 12px;
+}
+@media (max-width: 1170px) {
+  .vertical-timeline-element-content .vertical-timeline-element-date {
+    color: #333;
+  }
+}

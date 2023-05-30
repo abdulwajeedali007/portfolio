@@ -1,0 +1,57 @@
+.intro {
+  padding: 200px 0;
+
+  @media (max-width: 900px) {
+    height: auto;
+    padding: 100px 0;
+  }
+  .intro_content {
+    margin-bottom: 32px;
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+    .intro_text {
+      width: 60%;
+    }
+    @media (max-width: 900px) {
+      .intro_text {
+        width: auto;
+      }
+    }
+  }
+  .card_content {
+    padding: 32px 0;
+    .card_container {
+      position: relative;
+      padding: 32px;
+      text-align: center;
+      background: #435364;
+      border: 1px solid #89939e;
+      border-radius: 10px;
+      box-shadow: 0px 10px 10px -20px rgba(0, 0, 0, 1);
+      h4 {
+        font-weight: 700;
+      }
+      .card_number {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        color: #001f3f;
+        font-weight: 700;
+        align-items: center;
+        line-height: 50px;
+      }
+    }
+    @media (max-width: 900px) {
+      .column {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

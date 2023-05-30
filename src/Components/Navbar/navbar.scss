@@ -1,0 +1,165 @@
+.navbar_section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+
+  @media (max-width: 900px) {
+    background: #435364;
+  }
+}
+.nav_bar_desktop {
+  display: flex;
+  position: fixed;
+  background: #0a3056;
+  left: 32px;
+  top: -32px;
+  padding: 16px;
+  width: 90%;
+  transform-origin: left;
+  transform: rotate(90deg);
+  .nav-link {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 25px;
+    font-weight: 200;
+    &:hover {
+      color: #89939e;
+    }
+  }
+}
+.nav-link.selected {
+  border-bottom: 1px solid #fff;
+  scale: 1.02;
+}
+
+.navbar {
+  .logo {
+    font-size: 36px;
+    color: #fff;
+    object-fit: cover;
+    transform: rotate(270deg);
+    &_w {
+      font-size: 48px;
+      font-family: "Righteous", sans-serif;
+      margin: 0 5px;
+    }
+  }
+}
+
+.phone {
+  svg {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 32px;
+  }
+  &_number_details__text {
+    color: #fff;
+    font-size: 12px;
+  }
+  &_number_details__number {
+    color: #fff;
+  }
+}
+.email {
+  svg {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 32px;
+  }
+  &_details__text {
+    color: #fff;
+    font-size: 12px;
+  }
+  &_details__id {
+    color: #fff;
+  }
+}
+
+.resume {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 8px 24px;
+  svg {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  button {
+    border: 0;
+    font-size: 14px;
+    background-color: transparent;
+  }
+}
+.nav_bar_mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  color: #333;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
+  div {
+    margin-bottom: 1rem;
+  }
+
+  .resume {
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    button {
+      color: #fff;
+    }
+  }
+  .close_button {
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    font-size: 20px;
+  }
+  .nav-link {
+    font-size: 24px;
+    font-weight: 900;
+  }
+  .phone {
+    .phone_icon svg {
+      color: #333;
+    }
+    &_number_details {
+      &__number,
+      &__text {
+        color: #333;
+      }
+    }
+  }
+  .email {
+    .email_icon svg {
+      color: #333;
+    }
+    &_details {
+      &__text,
+      &__id {
+        color: #333;
+      }
+    }
+  }
+}
+.resume_button_desktop {
+  color: #333;
+  line-height: 40px;
+  &:hover {
+    color: #333;
+  }
+}
+.resume_button_mobile {
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
