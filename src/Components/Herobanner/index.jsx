@@ -1,7 +1,10 @@
 import React from "react";
 import Navbar from "../Navbar";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./herobanner.scss";
+import { TfiLinkedin, TfiTwitterAlt } from "react-icons/tfi";
+import { BsInstagram } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const container = {
@@ -54,11 +57,32 @@ function Index() {
                 <motion.h2 variants={element}>
                   Hi, I'm wajeed a Front-End Developer
                 </motion.h2>
-                <motion.p variants={element}>
+                <motion.p variants={element} className="mb-4">
                   I'm javascript developer based on Hyderabad, India, I have
                   almost 5 years of experience and I specialize creating web
                   apps, I am open for new opportunities and intersting projects.
                 </motion.p>
+                <motion.div variants={element} className="social_icons">
+                  <Link
+                    to="https://www.linkedin.com/in/abdul-wajeed-ali-4460a5b4/"
+                    target="_blank"
+                  >
+                    <TfiLinkedin />
+                  </Link>
+                  <Link
+                    to="https://twitter.com/abdul_wajeedali"
+                    target="_blank"
+                    className="mx-4"
+                  >
+                    <TfiTwitterAlt />
+                  </Link>
+                  <Link
+                    to="https://www.instagram.com/imwajeedali"
+                    target="_blank"
+                  >
+                    <BsInstagram />
+                  </Link>
+                </motion.div>
               </motion.div>
               {/* <div className="btn_indicator"></div> */}
               <motion.div
