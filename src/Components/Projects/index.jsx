@@ -6,6 +6,7 @@ import foodExplore from "../../Utils/Projectscreens/foodExplore.jpg";
 import movieApp from "../../Utils/Projectscreens/movieApp.jpg";
 import fitnessPro from "../../Utils/Projectscreens/fitnessPro.jpg";
 import sequal from "../../Utils/Projectscreens/sequel.jpg";
+import blogs from "../../Utils/Projectscreens/blogs.jpg";
 
 import { motion, useInView, useAnimation } from "framer-motion";
 
@@ -130,6 +131,23 @@ function Index() {
               tags={{ tag1: "React", tag2: "SCSS", tag3: "Bootstrap" }}
               url="https://abdulwajeedali007.github.io/sequel/home.html"
               image={sequal}
+            />
+          </motion.div>
+          <motion.div
+            variants={element}
+            className="col-lg-3 col-md-6 col-xs-12 mb-3"
+          >
+            <Cardbox
+              title="Blog App"
+              description="Blog app where we can add our blog as well as we can go through others blog too. Created based on Node, Expres, Mogodb, and for Front End use React and for authorization use JWT."
+              tags={{
+                tag1: "React",
+                tag2: "SCSS",
+                tag3: "Bootstrap",
+                tag4: "Node",
+              }}
+              url="https://blogs-app-mern.netlify.app"
+              image={blogs}
             />
           </motion.div>
         </Row>
